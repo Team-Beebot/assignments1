@@ -1,21 +1,22 @@
 package Assignment1;
 
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class Answer4 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a integer you want: ");
-        int num = sc.nextInt();
-
-        if(num>0){
-            for(int i =1; i<=num; i++){
-
-            }
-        }
-
-
-
-
-    }
+public static void main(String[] args) {
+int n;
+int sum = 0;
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter integers with one space gap:");
+String s =sc.nextLine();
+StringTokenizer st = new StringTokenizer(s," ");
+while (st.hasMoreTokens()){
+String temp = st.nextToken();
+n = Integer.parseInt(temp);
+System.out.println(n);
+sum = sum+n;
+}
+System.out.println("sum of the integers is :"+ sum);
+}
 }
